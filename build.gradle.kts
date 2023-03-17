@@ -33,6 +33,12 @@ subprojects {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.boot:spring-boot-dependencies:3.0.4")
+        }
+    }
+
     configurations {
         compileOnly {
             extendsFrom(configurations.annotationProcessor.get())
