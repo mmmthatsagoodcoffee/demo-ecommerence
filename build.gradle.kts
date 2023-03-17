@@ -22,7 +22,7 @@ allprojects {
 }
 
 subprojects {
-    group = "com.demo"
+    group = "com.giorgio.demo"
     version = "0.0.1-SNAPSHOT"
 
     apply(plugin = "java")
